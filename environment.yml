@@ -1,0 +1,55 @@
+name: diuretic-aki-causal
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.9
+  
+  # Core scientific computing
+  - numpy>=1.20.0
+  - pandas>=1.3.0
+  - scipy>=1.7.0
+  
+  # Machine learning
+  - scikit-learn>=1.0.0
+  - xgboost>=1.5.0
+  - lightgbm>=3.3.0
+  
+  # Visualization
+  - matplotlib>=3.4.0
+  - seaborn>=0.11.0
+  - plotly>=5.0.0
+  
+  # Statistical analysis
+  - statsmodels>=0.13.0
+  
+  # Jupyter
+  - jupyter>=1.0.0
+  - notebook>=6.4.0
+  - ipywidgets>=7.6.0
+  
+  # R and R packages (optional, if using conda)
+  - r-base>=4.0.0
+  - r-essentials
+  - r-grf>=2.0.0
+  - r-matchit>=4.0.0
+  
+  # Utilities
+  - tqdm>=4.62.0
+  - pyyaml>=6.0
+  
+  # Pip dependencies (not available in conda)
+  - pip
+  - pip:
+    - econml>=0.13.0
+    - dowhy>=0.8.0
+    - shap>=0.40.0
+    - lime>=0.2.0
+    - missingno>=0.5.0
+    - imbalanced-learn>=0.9.0
+    - pingouin>=0.5.0
+    - pytest>=7.0.0
+    - pytest-cov>=3.0.0
+    - black>=22.0.0
+    - flake8>=4.0.0
